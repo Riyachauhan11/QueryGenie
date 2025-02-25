@@ -1,0 +1,11 @@
+.env
+
+# Ignore data files 
+data/*.csv
+data/*.json
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd

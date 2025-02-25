@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+transformers
+nltk
+torch
+flask
+joblib
+streamlit
+langchain_groq
+python-dotenv
