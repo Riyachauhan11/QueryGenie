@@ -3,6 +3,7 @@
 QueryGenie is an AI-powered customer support automation system that categorizes incoming queries and emails, analyzes sentiment, and generates AI-driven responses based on confidence scores and the urgency or intensity of emotions detected in customer requests.
 
 # 📁 Project Structure
+```
 📂 QueryGenie
  ├── 📂 data  # Contains datasets for classification & sentiment analysis
  │   ├── emails.csv  # Customer support intent dataset (for query classification)
@@ -33,6 +34,7 @@ QueryGenie is an AI-powered customer support automation system that categorizes 
  ├── .gitignore  # Specifies ignored files
  ├── README.md  # Project documentation
  ├── requirements.txt  # Lists required dependencies
+```
 
 
 # 🛠️ Setup Instructions  
