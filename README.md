@@ -6,8 +6,8 @@ QueryGenie is an AI-powered customer support automation system that categorizes 
 ```
 📂 QueryGenie
  ├── 📂 data  # Contains datasets for classification & sentiment analysis
- │   ├── emails.csv  # Customer support intent dataset (for query classification)
- │   ├── sentiment_data.csv  # IMDB sentiment dataset (for sentiment analysis)
+ │   ├── emails.csv  # Customer support dataset 
+ │   ├── sentiment_data.csv  # sentiment dataset 
  │   ├── responses.json  # Predefined fallback responses for LLM failures
  │
  ├── 📂 models  # Pre-trained models for classification & sentiment analysis
@@ -83,8 +83,6 @@ This project uses **Groq's Llama model** for AI-generated responses. You need an
    ```plaintext
    GROQ_API_KEY=your_api_key_here
    ```
-
-🚨 **Note:** Do not push `.env` to GitHub for security reasons.  
 
 ---
 
