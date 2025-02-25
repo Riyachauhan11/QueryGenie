@@ -2,6 +2,8 @@
 
 QueryGenie is an AI-powered customer support automation system that categorizes incoming queries and emails, analyzes sentiment, and generates AI-driven responses based on confidence scores and the urgency or intensity of emotions detected in customer requests.
 
+**Note:** This project is a **prototype** designed to test high-level functionality. It is not the final product and will undergo significant changes in future iterations.
+
 # 📁 Project Structure
 ```
 📂 QueryGenie
@@ -72,10 +74,10 @@ pip install -r requirements.txt
 
 ## 3️⃣ Set Up Environment Variables  
 
-This project uses **Groq's Llama model** for AI-generated responses. You need an API key from **[GroqCloud](https://groq.com/)**:  
+This project uses **Groq's Llama model** for AI-generated responses. You need an API key from **[GroqCloud](https://console.groq.com/playground)**:  
 
 🔹 **Steps to Get Groq API Key:**  
-1. **Sign up** at **[GroqCloud](https://groq.com/)** and log in.  
+1. **Sign up** at **[GroqCloud](https://console.groq.com/playground)** and log in.  
 2. **Navigate to API Keys** in your account settings.  
 3. **Generate a new API key** and copy it.  
 4. **Create a `.env` file** in the project root and add:  
@@ -143,6 +145,32 @@ cd src
 streamlit run main.py
 ```
 
-This will start the application and open the **QueryGenie UI** in your browser, where you can enter customer queries and receive AI-generated responses.  
-
+This will start the application and open the **QueryGenie UI** in your browser, where you can enter customer queries and receive AI-generated responses. How the UI looks like:
+![image](https://github.com/user-attachments/assets/8ebb3c3b-ac34-4fc5-97a4-0b4c478cb84c)
+  
 ---
+
+# How QyeryGenie works on a High Leve;?
+
+1. Process Incoming Query:
+
+    A customer query is received and processed using trained models.
+    The email classifier identifies the type of query.
+    The sentiment analyzer determines if the sentiment is positive or negative.
+
+2. Query Categorization:
+
+    The classifier uses a dataset (emails.csv) to match the query with a predefined category (e.g., Order, Refund, Payment, etc.).
+
+3. Sentiment Analysis:
+
+    The sentiment model checks the emotional tone of the query using the sentiment dataset (sentiment_data.csv).
+
+4. Confidence Score Evaluation:
+
+    Both classification and sentiment models return a confidence score.
+    If the confidence score is high, the AI-generated response is accepted and sent to the customer.
+
+5. Escalation to Human Agent:
+
+    If the sentiment is negative and the query falls into a sensitive category (e.g., Refund, Complaint), the request is forwarded to a human agent for review.
