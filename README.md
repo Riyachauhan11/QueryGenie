@@ -150,27 +150,23 @@ This will start the application and open the **QueryGenie UI** in your browser, 
   
 ---
 
-# How QyeryGenie works on a High Leve;?
+## How QueryGenie Works?  
 
-1. Process Incoming Query:
+1. **Process Incoming Query**  
+   - A customer query is received and processed using trained models.  
+   - The **email classifier** identifies the type of query.  
+   - The **sentiment analyzer** determines if the sentiment is **positive** or **negative**.  
 
-    A customer query is received and processed using trained models.
-    The email classifier identifies the type of query.
-    The sentiment analyzer determines if the sentiment is positive or negative.
+2. **Query Categorization**  
+   - The classifier uses a dataset (`emails.csv`) to match the query with a predefined category (e.g., Order, Refund, Payment, etc.).  
 
-2. Query Categorization:
+3. **Sentiment Analysis**  
+   - The sentiment model checks the emotional tone of the query using the sentiment dataset (`sentiment_data.csv`).  
 
-    The classifier uses a dataset (emails.csv) to match the query with a predefined category (e.g., Order, Refund, Payment, etc.).
+4. **Confidence Score Evaluation**  
+   - Both classification and sentiment models return a **confidence score**.  
+   - If the confidence score is **high**, the AI-generated response is **accepted** and sent to the customer.  
 
-3. Sentiment Analysis:
+5. **Escalation to Human Agent**  
+   - If the sentiment is **negative** and the query falls into a **sensitive category** (e.g., Refund, Complaint), the request is **forwarded to a human agent** for review.  
 
-    The sentiment model checks the emotional tone of the query using the sentiment dataset (sentiment_data.csv).
-
-4. Confidence Score Evaluation:
-
-    Both classification and sentiment models return a confidence score.
-    If the confidence score is high, the AI-generated response is accepted and sent to the customer.
-
-5. Escalation to Human Agent:
-
-    If the sentiment is negative and the query falls into a sensitive category (e.g., Refund, Complaint), the request is forwarded to a human agent for review.
