@@ -3,14 +3,15 @@
 QueryGenie is an AI-powered customer support automation system that categorizes incoming queries and emails, analyzes sentiment, and generates AI-driven responses based on confidence scores and the urgency or intensity of emotions detected in customer requests.
 
 **Note:** This project is a **prototype** designed to fulfill the high-level functionality of the final product. It is will undergo significant changes in future iterations.
+If you want to enclose it in a proper box-like format in Markdown, you can use a **code block with a border-like look** using ASCII characters:  
 
-**📌 Tech Stack Used**  
 
-- **Programming Language:** Python  
-- **Machine Learning & NLP:** Scikit-learn, NLTK, Transformers (Hugging Face)  
-- **Data Handling:** Pandas, Pickle  
-- **Frontend:** Streamlit  
-- **Environment & Config Management:** Dotenv  
+> 📌 **Tech Stack Used**  
+> - **Programming Language:** Python  
+> - **Machine Learning & NLP:** Scikit-learn, NLTK, Transformers (Hugging Face)  
+> - **Data Handling:** Pandas, Pickle  
+> - **Frontend:** Streamlit  
+> - **Environment & Config Management:** Dotenv  
 
 
 # 📁 Project Structure
