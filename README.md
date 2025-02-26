@@ -4,6 +4,27 @@ QueryGenie is an AI-powered customer support automation system that categorizes 
 
 **Note:** This project is a **prototype** designed to fulfill the high-level functionality of the final product. It is will undergo significant changes in future iterations.
 
+
+```
+┌───────────────────────────────────────────┐
+│               📌 Tech Stack Used           │
+├───────────────────────────────────────────┤
+│  🔹 Programming Language: Python          │
+│  🔹 Machine Learning & NLP:               │
+│     - Scikit-learn, NLTK, Transformers    │
+│  🔹 Data Handling: Pandas, Pickle         │
+│  🔹 Frontend: Streamlit                   │
+│  🔹 Environment & Config Management: Dotenv │
+└───────────────────────────────────────────┘
+```
+
+> 📌 **Tech Stack Used**  
+> - **Programming Language:** Python  
+> - **Machine Learning & NLP:** Scikit-learn, NLTK, Transformers (Hugging Face)  
+> - **Data Handling:** Pandas, Pickle  
+> - **Frontend:** Streamlit  
+> - **Environment & Config Management:** Dotenv
+
 # 📁 Project Structure
 ```
 📂 QueryGenie
@@ -37,15 +58,6 @@ QueryGenie is an AI-powered customer support automation system that categorizes 
  ├── README.md  # Project documentation
  ├── requirements.txt  # Lists required dependencies
 ```
-
-📌 **Tech Stack Used**  
-
-- **Programming Language:** Python  
-- **Machine Learning & NLP:** Scikit-learn, NLTK, Transformers (Hugging Face)  
-- **Data Handling:** Pandas, Pickle  
-- **Frontend:** Streamlit  
-- **Environment & Config Management:** Dotenv  
-
 
 # 🛠️ Setup Instructions  
 
