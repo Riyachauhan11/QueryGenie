@@ -2,7 +2,7 @@
 
 QueryGenie is an AI-powered customer support automation system that categorizes incoming queries and emails, analyzes sentiment, and generates AI-driven responses based on confidence scores and the urgency or intensity of emotions detected in customer requests.
 
-**Note:** This project is a **prototype** designed to test high-level functionality. It is not the final product and will undergo significant changes in future iterations.
+**Note:** This project is a **prototype** designed to fulfill the high-level functionality of the final product. It is will undergo significant changes in future iterations.
 
 # 📁 Project Structure
 ```
@@ -37,6 +37,14 @@ QueryGenie is an AI-powered customer support automation system that categorizes 
  ├── README.md  # Project documentation
  ├── requirements.txt  # Lists required dependencies
 ```
+
+📌 **Tech Stack Used**  
+
+- **Programming Language:** Python  
+- **Machine Learning & NLP:** Scikit-learn, NLTK, Transformers (Hugging Face)  
+- **Data Handling:** Pandas, Pickle  
+- **Frontend:** Streamlit  
+- **Environment & Config Management:** Dotenv  
 
 
 # 🛠️ Setup Instructions  
@@ -168,5 +176,13 @@ This will start the application and open the **QueryGenie UI** in your browser, 
    - If the confidence score is **high**, the AI-generated response is **accepted** and sent to the customer.  
 
 5. **Escalation to Human Agent**  
-   - If the sentiment is **negative** and the query falls into a **sensitive category** (e.g., Refund, Complaint), the request is **forwarded to a human agent** for review.  
+   - If the sentiment is **negative** and the query falls into a **sensitive category** (e.g., Refund, Complaint), the request is **forwarded to a human agent** for review.
+
+### 🔹 Final Notes  
+
+- This project is a **prototype** and not the final version.  
+- The datasets used for email classification and sentiment analysis are **not extensive or broad enough** to cover every possible customer query. A more **comprehensive dataset** would be needed for real-world deployment.  
+- The system is specifically designed for handling **customer support queries** and may **not work** for other domains.  
+- Since the datasets are limited, the model **may not always produce accurate results** and might misclassify some queries.  
+- For response generation, a **general LLM** has been used. However, in a real-world scenario, an **LLM trained on company policies and guidelines** would be used to ensure **accurate and policy-compliant** responses.
 
