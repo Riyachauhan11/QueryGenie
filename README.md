@@ -14,7 +14,7 @@ If you want to enclose it in a proper box-like format in Markdown, you can use a
 > - **Environment & Config Management:** Dotenv  
 
 
-# 📁 Project Structure
+## 📁 Project Structure
 ```
 📂 QueryGenie
  ├── 📂 data  # Contains datasets for classification & sentiment analysis
@@ -179,7 +179,9 @@ This will start the application and open the **QueryGenie UI** in your browser, 
 5. **Escalation to Human Agent**  
    - If the sentiment is **negative** and the query falls into a **sensitive category** (e.g., Refund, Complaint), the request is **forwarded to a human agent** for review.
 
-### 🔹 Final Notes  
+---
+
+## 🔹 Final Notes  
 
 - This project is a **prototype** and not the final version.  
 - The datasets used for email classification and sentiment analysis are **not extensive or broad enough** to cover every possible customer query. A more **comprehensive dataset** would be needed for real-world deployment.  
